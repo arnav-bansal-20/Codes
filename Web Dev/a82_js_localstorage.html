@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <h1>WELCOME</h1>
+    <div name="d1" id="d1"></div>
+
+    <script>
+      a = localStorage.getItem("xy");
+      b = sessionStorage.getItem("ab");
+      if (a != null) d1.innerHTML = "welcome " + a;
+      else if (b != null) d1.innerHTML = "welcome " + b;
+      else location.href = "signin.html";
+    </script>
+
+    <input type="button" value="log out" name="t3" id="t3" onclick="f1()" />
+
+    <script>
+      function f1() {
+        localStorage.removeItem("xy");
+        sessionStorage.removeItem("ab");
+        location.href = "signin.html";
+      }
+    </script>
+  </body>
+</html>

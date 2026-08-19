@@ -1,0 +1,86 @@
+<html>
+
+<body>
+    <center>
+
+        <head>
+            <style>
+                .c1 {
+                    color: white;
+                    background: black;
+                    font-size: 20;
+                    text-align: center;
+                    padding: 10px
+                }
+
+                .c2 {
+                    font-size: 20
+                }
+
+                </head>
+            </style>
+
+            <Table style=border:solid 2px black cellpadding=7>
+
+                <tr>
+                    <td> Sign in </td>
+                    <td>
+                        <font color="blue">G<font color="red">o<font color="yellow">o<font color="blue">g<font
+                                            color="darkgreen">l<font color="red">e</font>
+                    </td>
+                </tr>
+
+                <td> Username </td>
+                <tr>
+                    <td colspan=3> <Input Type="Text" name="t1" id="t1" class="c2" size=25> </td>
+                </tr>
+
+                <td> Password </td>
+                <tr>
+                    <td colspan=3> <Input Type="password" name="t2" id="t2" class="c2" size=25>
+
+                        <img src="e1.jpg" name="i1" id="i1" width=25 height=25 onclick="f2()" />
+                        <script>
+
+                            function f2() {
+                                if (t2.type == "password") {
+                                    t2.type = "text"
+                                    i1.src = "e2.jpeg"
+                                }
+                                else if (t2.type == "text") {
+                                    t2.type = "password"
+                                    i1.src = "e1.jpg"
+                                }
+                            }
+                        </script>
+
+
+                    </td>
+                </tr>
+
+                <td>
+                    <Input Type="button" value="Sign in" name="t3" id="t3" class="c1" onclick="f1()">
+                    <INPUT TYPE="checkbox" name="t4" id="t4"> Stay signed in
+                </td>
+
+                <tr>
+                    <td> <A href="b1.html"> Can't access your account? </A></td>
+                </tr>
+                <script>
+
+                    function f1() {
+                        if ((t1.value == "user1" && t2.value == "abc") || (t1.value == "user2" && t2.value == "xyz")) {
+                            if (t4.checked == true)
+                                localStorage.setItem("xy", t1.value)
+                            sessionStorage.setItem("ab", t1.value)
+                            location.href = "welcome1.html"
+                        }
+                        else
+                            alert("invalid user")
+                    }
+                </script>
+            </table>
+    </center>
+</body>
+
+</html>

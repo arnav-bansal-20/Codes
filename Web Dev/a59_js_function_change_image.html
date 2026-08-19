@@ -1,0 +1,43 @@
+<html>
+  <body>
+    <table border="solid">
+      <tr>
+        <td>
+          <img
+            src="sachin.jpg"
+            name="image1"
+            id="image1"
+            width="200"
+            height="200"
+            onmouseover="f1()"
+          />
+        </td>
+        <td rowspan="2">
+          <img src="" name="t1" id="t1" width="400" height="400" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            src="dhoni.png"
+            name="image2"
+            id="image2"
+            width="200"
+            height="200"
+            onmouseover="f2()"
+          />
+        </td>
+      </tr>
+
+      <script>
+        function f1() {
+          t1.src = "sachin.jpg";
+        }
+        function f2() {
+          t1.src = "dhoni.png";
+        }
+      </script>
+    </table>
+  </body>
+</html>

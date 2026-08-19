@@ -1,0 +1,31 @@
+<html>
+  <body>
+    <center>
+      <img
+        src="img-3.jpeg"
+        width="1000"
+        height="500"
+        name="t2"
+        id="t2"
+        onmouseover="f1()"
+        onmouseout="f3()"
+      />
+
+      <script>
+        a = 0;
+        abc = new Array("img-6.jpeg", "img-5.jpg", "img-1.jpg", "img-3.jpeg");
+        function f1() {
+          x = setInterval("f2()", 1000);
+        }
+        function f2() {
+          t2.src = abc[a];
+          a = a + 1;
+          if (a > 3) a = 0;
+        }
+        function f3() {
+          clearInterval(x);
+        }
+      </script>
+    </center>
+  </body>
+</html>

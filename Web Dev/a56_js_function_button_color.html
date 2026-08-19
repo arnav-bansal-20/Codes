@@ -1,0 +1,74 @@
+<html>
+  <body>
+    <input
+      type="button"
+      value="show"
+      name="b1"
+      id="b1"
+      onmouseover="f1()"
+      onmouseout="f2()"
+    />
+    <br />
+    <br />
+    <br />
+
+    <input
+      type="button"
+      value="submit"
+      name="b2"
+      id="b2"
+      onmousedown="f3()"
+      onmouseup="f4()"
+    />
+    <br />
+    <br />
+    <br />
+    <input
+      type="button"
+      value="submit"
+      name="b3"
+      id="b3"
+      onkeydown="f5()"
+      onkeyup="f6()"
+    />
+    <br />
+    <br />
+    <br />
+
+    <input type="text" name="b4" id="b4" onblur="f7()" onfocus="f8()" />
+
+    <script>
+      function f1() {
+        b1.style.background = "red";
+      }
+
+      function f2() {
+        b1.style.background = "blue";
+      }
+
+      function f3() {
+        b2.style.background = "yellow";
+      }
+
+      function f4() {
+        b2.style.background = "red";
+      }
+
+      function f5() {
+        b3.style.background = "pink";
+      }
+
+      function f6() {
+        b3.style.background = "navy";
+      }
+
+      function f7() {
+        b4.style.background = "green";
+      }
+
+      function f8() {
+        b4.style.background = "orange";
+      }
+    </script>
+  </body>
+</html>

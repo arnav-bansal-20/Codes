@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <style>
+        .c1 {
+            color: white;
+            background: navy;
+            font-size: 20;
+            padding: 10px;
+            text-align: center
+        }
+
+        .c2 {
+            background: pink;
+            font-size: 20;
+            padding: 10px;
+            text-align: center
+        }
+
+        </head>
+    </style>
+
+
+    <center>
+        <table>
+
+            <tr>
+
+                <td class="c1"> SPORTS </td>
+                <td> <input type="checkbox" name="t1" id="t1" class="c1"> </td>
+
+                <td class="c1"> MUSIC </td>
+                <td> <input type="checkbox" name="t2" id="t2" class="c1"> </td>
+
+                <td class="c1"> MOVIES </td>
+                <td> <input type="checkbox" name="t3" id="t3" class="c1"> </td>
+
+            </tr>
+
+            <tr>
+                <td> <input type="text" name="t4" id="t4" class="c1"> </td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="show" onclick="f1()" class="c2"> </td>
+            </tr>
+    </center>
+    </table>
+
+    <script>
+
+        function f1() {
+            t4.value = ""
+            if (t1.checked == true)
+                t4.value = t4.value + "SPORTS"
+            if (t2.checked == true)
+                t4.value = t4.value + "MUSIC"
+            if (t3.checked == true)
+                t4.value = t4.value + "MOVIES"
+        }
+
+
+    </script>
+
+</html>

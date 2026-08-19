@@ -1,0 +1,24 @@
+<html>
+<body>
+<input type="button" value="start" name="b1" id="b1" onclick="f1()">
+
+<input type="button" value="stop"  name="b2" id="b2" onclick="f2()">
+
+<input type="button" value="stopitself"  name="b3" id="b3" onclick="f3()">
+
+<script>
+function f1()
+{
+x=open("welcome.html","abc")
+}
+function f2()
+{
+x.close()
+}
+function f3()
+{
+this.close()
+}
+</script>
+</body>
+</html>

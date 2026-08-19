@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <input type="button" value="back" name="b1" id="b1" onclick="f1()" />
+
+    <input type="button" value="2stepback" name="b2" id="b2" onclick="f2()" />
+
+    <script>
+      function f1() {
+        history.back();
+      }
+      function f2() {
+        history.go(-2);
+      }
+    </script>
+  </body>
+</html>

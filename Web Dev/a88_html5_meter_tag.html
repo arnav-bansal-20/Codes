@@ -1,0 +1,43 @@
+<html>
+  <body>
+    <center>
+      <br /><br /><br /><br /><br /><br />
+
+      <meter
+        name="p1"
+        id="p1"
+        value="0"
+        min="0"
+        max="100"
+        low="20"
+        high="70"
+      ></meter>
+      <br /><br />
+
+      <input type="button" value="start" name="b1" id="b1" onclick="f1()" />
+      <input type="button" value="stop" name="b2" id="b2" onclick="f3()" />
+      <br />
+      <br />
+      <div name="d1" id="d1"></div>
+
+      <script>
+        function f1() {
+          x = setInterval("f2()", 100);
+        }
+        function f2() {
+          if (p1.value == 100) {
+            clearInterval(x);
+            alert("Successfully completed");
+            this.close();
+          } else {
+            p1.value = p1.value + 1;
+            d1.innerHTML = p1.value + " % completed";
+          }
+        }
+        function f3() {
+          clearInterval(x);
+        }
+      </script>
+    </center>
+  </body>
+</html>

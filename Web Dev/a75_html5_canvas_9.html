@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script>
+      window.onload = function () {
+        canvas = document.getElementById("abc");
+        ctext = canvas.getContext("2d");
+        x = 80;
+        y = 110;
+        ctext.font = "40pt Calibri";
+        ctext.lineWidth = 2;
+        ctext.strokeStyle = "brown";
+        ctext.strokeText("WELCOME", x, y);
+        ctext.rect(50, 50, 200, 100);
+        ctext.globalAlpha = 0.9;
+        ctext.fillStyle = "navy";
+        ctext.fill();
+      };
+    </script>
+  </head>
+  <body>
+    <canvas id="abc" width="360" height="200"></canvas>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <script>
+      total = 0;
+      ans = "y";
+      while (ans == "y") {
+        iname = prompt("enter item name");
+        rate = parseInt(prompt("enter rate"));
+        qty = parseInt(prompt("enter qty"));
+        amt = rate * qty;
+        total = total + amt;
+
+        document.write("<br/>item name:" + iname);
+        document.write("<br/> rate:" + rate);
+        document.write("<br/> qty:" + qty);
+        document.write("<br/> amt:" + amt);
+
+        ans = prompt("want more items");
+        document.write("<br/>want more items:" + ans);
+      }
+      document.write("<br/> total bill:" + total);
+    </script>
+  </body>
+</html>

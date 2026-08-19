@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <style>
+        .c1 {
+            color: white;
+            background: navy;
+            font-size: 20;
+            padding: 10px;
+            text-align: center
+        }
+
+        .c2 {
+            color: red;
+            background: pink;
+            font-size: 20;
+            padding: 10px;
+            text-align: center
+        }
+
+        </head>
+    </style>
+
+
+    <center>
+        <table>
+            <tr>
+                <td class="c1"> MALE </td>
+                <td> <input type="radio" name="g" id="g" class="c1"> </td>
+
+                <td class="c1"> FEMALE </td>
+                <td> <input type="radio" name="g" id="g" class="c1"> </td>
+            </tr>
+            <TR>
+                <td> <input type="text" name="t1" id="t1" class="c1"> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="show" onclick="f1()" class="c2"> </td>
+            </tr>
+
+    </center>
+    </table>
+    <script>
+
+        function f1() {
+            if (g[0].checked == true)
+                t1.value = "Mr"
+            else if (g[1].checked == true)
+                t1.value = "Mrs"
+        }
+
+
+
+    </script>
+
+</html>

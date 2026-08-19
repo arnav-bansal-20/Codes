@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <style>
+        .c1 {
+            color: red;
+            background: navy;
+            font-size: 20;
+            padding: 10px;
+            text-align: center
+        }
+
+        .c2 {
+            color: red;
+            background: navy;
+            font-size: 20;
+            padding: 10px;
+            text-align: center
+        }
+
+        </head>
+    </style>
+
+    <center>
+        <table>
+            <tr>
+                <td class="c1"> FIRST NO </td>
+                <td> <input type="text" name="t1" id="t1" class="c1"> </td>
+            </tr>
+
+
+            <tr>
+                <td class="c1"> SECOND NO </td>
+                <td> <input type="text" name="t2" id="t2" class="c1"> </td>
+            </tr>
+
+
+            <tr>
+                <td class="c1"> RESULT </td>
+                <td> <input type="text" name="t3" id="t3" class="c1"> </td>
+            </tr>
+    </center>
+    </table>
+
+    <input type="button" value="sum" onclick="f1()" class="c2">
+    <input type="button" value="subtract" onclick="f2()" class="c2">
+    <input type="button" value="multiply" onclick="f3()" class="c2">
+    <input type="button" value="divide" onclick="f4()" class="c2">
+
+
+    <script>
+        function f1() {
+            t3.value = parseInt(t1.value) + parseInt(t2.value)
+        }
+        function f2() {
+            t3.value = parseInt(t1.value) - parseInt(t2.value)
+        }
+        function f3() {
+            t3.value = parseInt(t1.value) * parseInt(t2.value)
+        }
+        function f4() {
+            t3.value = parseInt(t1.value) / parseInt(t2.value)
+        }
+
+
+    </script>
+
+</html>

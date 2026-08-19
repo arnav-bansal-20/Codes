@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>The Jquery Example</title>
+    <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("p").hover(
+          function () {
+            $("p").css("background-color", "red");
+          },
+          function () {
+            $("p").css("background-color", "maroon");
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <p>Hover the mouse on this line.</p>
+  </body>
+</html>

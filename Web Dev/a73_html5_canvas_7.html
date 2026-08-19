@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script>
+      window.onload = function () {
+        canvas = document.getElementById("abc");
+        ctext = canvas.getContext("2d");
+        x = 69;
+        y = 50;
+        w = 150;
+        h = 137;
+        i = new Image();
+        i.onload = function () {
+          ctext.drawImage(i, x, y, w, h);
+        };
+        i.src = "img-1.jpg";
+      };
+    </script>
+  </head>
+  <body>
+    <canvas id="abc" width="368" height="300"></canvas>
+  </body>
+</html>

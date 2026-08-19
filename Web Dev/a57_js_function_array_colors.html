@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <center>
+      <input type="button" value="start" name="b1" id="b1" onclick="f1()" />
+      <input type="button" value="stop" name="b2" id="b2" onclick="f3()" />
+
+      <script>
+        a = 0;
+
+        abc = new Array("red", "navy", "pink", "orange", "green");
+        function f1() {
+          x = setInterval("f2()", 1000);
+        }
+        function f2() {
+          document.bgColor = abc[a];
+          a = a + 1;
+          if (a > 4) a = 0;
+        }
+        function f3() {
+          clearInterval(x);
+        }
+      </script>
+    </center>
+  </body>
+</html>

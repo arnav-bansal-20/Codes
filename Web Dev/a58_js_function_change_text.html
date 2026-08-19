@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <center>
+      <img
+        src="sachin.jpg"
+        name="image1"
+        id="image1"
+        width="500"
+        height="400"
+      />
+      <br />
+      <input type="text" name="t1" id="t1" value="sachin" />
+      <br />
+
+      <input type="button" value="change" name="t2" id="t2" onclick="f1()" />
+
+      <script>
+        function f1() {
+          if (t1.value == "sachin") {
+            t1.value = "dhoni";
+            image1.src = "dhoni.png";
+          } else if (t1.value == "dhoni") {
+            t1.value = "sachin";
+            image1.src = "sachin.jpg";
+          }
+        }
+      </script>
+    </center>
+  </body>
+</html>

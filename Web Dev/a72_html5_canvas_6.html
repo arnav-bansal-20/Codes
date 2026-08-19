@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script>
+      window.onload = function () {
+        canvas = document.getElementById("abc");
+        ctext = canvas.getContext("2d");
+        i = new Image();
+        i.onload = function () {
+          ctext.drawImage(i, 69, 50);
+        };
+        i.src = "img-1.jpg";
+      };
+    </script>
+  </head>
+  <body>
+    <canvas id="abc" width="368" height="300"></canvas>
+  </body>
+</html>

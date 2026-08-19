@@ -1,0 +1,31 @@
+h1 {
+  color: red;
+  background: pink;
+  font-size: 60;
+  padding: 10px;
+  text-align: center;
+  border: solid 2px red;
+}
+p {
+  color: navy;
+  background: pink;
+  font-size: 20;
+  padding: 10px;
+  text-align: justify;
+  border: solid 2px yellow;
+  line-height: 2;
+}
+img {
+  width: 200;
+  height: 200;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}
+.c1 {
+  color: green;
+  background: yellow;
+}
+.h1 {
+  color: navy;
+}

@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <script>
+      es = 0;
+      os = 0;
+      even = 0;
+      odd = 0;
+      for (a = 1; a <= 10; a = a + 1) {
+        b = parseInt(prompt("enter no"));
+        document.write("<br/>" + b);
+        if (b % 2 == 0) {
+          es = es + b;
+          even++;
+        } else {
+          os = os + b;
+          odd++;
+        }
+      }
+      document.write("<br/>sum of even no:" + es);
+      document.write("<br/>total even no:" + even);
+      document.write("<br/>sum of odd no:" + os);
+      document.write("<br/>total odd no:" + odd);
+    </script>
+  </body>
+</html>

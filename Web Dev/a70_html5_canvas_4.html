@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script>
+      window.onload = function () {
+        canvas = document.getElementById("abc");
+        ctext = canvas.getContext("2d");
+        x = canvas.width / 2;
+        y = canvas.width / 2;
+        radius = 75;
+        sA = 1.1 * Math.PI;
+        eA = 1.9 * Math.PI;
+        c = false;
+        ctext.beginPath();
+        ctext.arc(x, y, radius, sA, eA, c);
+        ctext.lineWidth = 25;
+
+        ctext.strokeStyle = "navy";
+        ctext.stroke();
+      };
+    </script>
+  </head>
+  <body>
+    <canvas id="abc" width="500" height="500"></canvas>
+  </body>
+</html>

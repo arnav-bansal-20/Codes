@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Drag and Drop API</title>
+    <script>
+      function f1(event) {
+        event.dataTransfer.setData("img-1", event.target.id);
+      }
+
+      function f2(event) {
+        event.preventDefault();
+      }
+
+      function f3(event) {
+        data = event.dataTransfer.getData("img-1");
+        event.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </head>
+
+  <body>
+    <div
+      id="d1"
+      style="border: solid 3px purple; height: 150; width: 100; padding: 10px"
+    >
+      <img
+        src="img-1.jpg"
+        height="100"
+        width="75"
+        id="i1"
+        draggable="true"
+        ondragstart="f1(event)"
+      />
+    </div>
+
+    <br />
+
+    <div
+      id="d1"
+      style="border: solid 3px blue; height: 150; width: 100; padding: 10px"
+      ondrop="f3(event)"
+      ondragover="f2(event)"
+    ></div>
+  </body>
+</html>

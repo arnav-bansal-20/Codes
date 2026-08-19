@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script>
+      window.onload = function () {
+        canvas = document.getElementById("abc");
+        ctext = canvas.getContext("2d");
+        ctext.beginPath();
+        ctext.rect(18, 50, 200, 100);
+        ctext.fillStyle = "navy";
+        ctext.fill();
+      };
+    </script>
+  </head>
+  <body>
+    <canvas id="abc" width="600" height="200"></canvas>
+  </body>
+</html>

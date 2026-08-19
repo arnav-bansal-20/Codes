@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script>
+      function f1() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(f2);
+        }
+      }
+      function f2(P) {
+        alert(
+          "Latitude:" +
+            P.coords.latitude +
+            "\n" +
+            "Longitude:" +
+            P.coords.longitude
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Display Location" onclick="f1()" />
+  </body>
+</html>

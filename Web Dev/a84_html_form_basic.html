@@ -1,0 +1,60 @@
+<html>
+  <body>
+    <center>
+      <form action="welcome.html">
+        <input
+          type="Text"
+          name="t1"
+          id="t1"
+          required
+          placeholder="enter name"
+          autofocus
+        />
+        <br />
+
+        <input type="email" name="t2" id="t2" required placeholder="email" />
+        <br />
+
+        <input type="URL" name="t3" id="t3" required placeholder="url" />
+        <br />
+
+        <input type="number" name="t4" id="t4" required placeholder="number" />
+        <br />
+
+        <input type="range" name="t5" id="t5" required placeholder="range" />
+        <br />
+
+        <input type="date" name="t6" id="t6" required placeholder="date" />
+        <br />
+
+        <input type="time" name="t7" id="t7" required placeholder="time" />
+        <br />
+
+        <input
+          type="datetime-local"
+          name="t8"
+          id="t8"
+          required
+          placeholder="datetime-local"
+        />
+        <br />
+
+        <input
+          type="color"
+          name="t9"
+          id="t9"
+          required
+          placeholder="color"
+          oninput="f1()"
+        />
+        <br />
+        <input type="submit" name="t10" id="t10" />
+        <script>
+          function f1() {
+            document.bgColor = t9.value;
+          }
+        </script>
+      </form>
+    </center>
+  </body>
+</html>
