@@ -1,0 +1,28 @@
+# Operating System Artifacts
+.DS_Store
+Thumbs.db
+
+# Build Artifacts and Executables
+*.o
+*.out
+*.exe
+*.dylib
+*.so
+*.a
+build/
+bin/
+
+# Python Virtual Environments & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.swp
+*.swo

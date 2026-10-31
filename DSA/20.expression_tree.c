@@ -87,7 +87,7 @@ NODE create_expr_tree(char infix[MAX])
                 push(&OS, temp);
             else
             {
-                while (OS.top != -1 && preced(OS.data[OS.top]->data) >=preced(symbol))
+                while (OS.top != -1 && preced(OS.data[OS.top]->data) >= preced(symbol))
                 {
                     t = pop(&OS);
                     t->right = pop(&TS);

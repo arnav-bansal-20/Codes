@@ -101,11 +101,12 @@ NODE deleteend(NODE start)
 }
 NODE deletepos(NODE start, int pos)
 {
-    if (start == NULL) {
+    if (start == NULL)
+    {
         printf("List is empty\n");
         return start;
     }
-    // Delete first node
+    // Delete first node ---------> deletebegin(start);
     if (pos == 1)
     {
         NODE temp = start;
@@ -136,7 +137,7 @@ NODE deletepos(NODE start, int pos)
 
 NODE deletevalue(NODE start, int key)
 {
-    NODE cur = start, prev = NULL; 
+    NODE cur = start, prev = NULL;
     while (cur != NULL && cur->data != key)
     {
         prev = cur;
@@ -147,7 +148,7 @@ NODE deletevalue(NODE start, int key)
         printf("Key not found\n");
         return start;
     }
-        prev->next = cur->next;
+    prev->next = cur->next;
     free(cur);
     return start;
 }
@@ -180,27 +181,48 @@ NODE orderlist(NODE start, int item)
     return start;
 }
 
-NODE sortList(NODE start) {
-    NODE sorted = NULL;     // new empty sorted list
+NODE sortList(NODE start)
+{
+    NODE sorted = NULL;
     NODE cur = start;
 
-    while (cur != NULL) {
-        sorted = orderlist(sorted, cur->data);  // insert each element sorted
+    while (cur != NULL)
+    {
+        NODE temp = cur;
         cur = cur->next;
+
+        // Insert temp into sorted list
+        if (sorted == NULL || temp->data < sorted->data)
+        {
+            temp->next = sorted;
+            sorted = temp;
+        }
+        else
+        {
+            NODE p = sorted;
+
+            while (p->next != NULL && p->next->data < temp->data)
+            {
+                p = p->next;
+            }
+
+            temp->next = p->next;
+            p->next = temp;
+        }
     }
 
-    return sorted;  // return sorted list
+    return sorted;
 }
 NODE reverse(NODE start)
 {
     NODE prev = NULL, cur = start, temp = NULL;
     while (cur != NULL)
     {
-        temp = prev;
+        temp = cur->next;
+        cur->next = prev;
         prev = cur;
-        cur = cur->next;
-        prev->next = temp;
-    } 
+        cur = temp;
+    }
     return prev;
 }
 void display(NODE start)
@@ -291,15 +313,14 @@ int main()
             break;
         case 12:
             exit(0);
-            case 13:
-            start=sortList(start);
+        case 13:
+            start = sortList(start);
         default:
             printf("Invalid choice\n");
         }
     }
     return 0;
 }
-
 
 #include <stdio.h>
 #include <stdlib.h>

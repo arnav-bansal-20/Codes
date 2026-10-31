@@ -39,6 +39,7 @@ int main()
     *itr = 67;
     itr++;
     *itr = 89;
+    cout << "List 2 is : " << endl;
     display(list2);
     list2.sort();
     list1.merge(list2); // merges two sorted lists into one sorted list

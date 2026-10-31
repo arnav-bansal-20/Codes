@@ -1,4 +1,3 @@
-# This file contains various Python code snippets that cover a range of topics including basic input/output, control flow, functions, file handling, classes, and more. Each snippet is designed to demonstrate a specific concept or solve a particular problem. The code is organized in a way that allows for easy understanding and experimentation. Users can uncomment the snippets they wish to run and modify them as needed to further explore Python programming.
 # prog1: Check if a number is even or odd
 '''a = int(input("Enter the number : "))
 if a%2 == 0:
@@ -299,8 +298,8 @@ sd.wait()
 write("recording0.wav", freq, recording)
 wv.write("recording1.wav", recording, freq, sampwidth=2)'''
 
-
-class B(Exception):
+# prog26: Exception handling with class hierarchy
+'''class B(Exception):
     pass
 
 class C(B):
@@ -317,4 +316,4 @@ for cls in [B, C, D]:
     except C:
         print("C")
     except B:
-        print("B")
+        print("B")'''

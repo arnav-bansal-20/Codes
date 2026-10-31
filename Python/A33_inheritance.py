@@ -1,5 +1,5 @@
 # multiple inheritance
-'''class employee:
+class employee:
     def __init__(self, name):
         self.name = name
 
@@ -19,7 +19,7 @@ o = danceremployee("kathak", "shivani")
 print(o.name)
 print(o.dance)
 o.show()
-print(danceremployee.mro())'''
+print(danceremployee.mro())
 
 #  multilevel inheritance
 #Base class

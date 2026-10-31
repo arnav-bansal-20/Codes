@@ -1,7 +1,7 @@
 # dictionary
 info = {"name": "Alice", "age": 30, "city": "New York"}
-print(info["name"])  # Output: Alice is item is not present in dict it will thown an error
-print(info.get(["name"]))  # Output: Alice if item is not present in list it will print none
+# print(info["name"])  # Output: Alice is item is not present in dict it will thown an error
+print(info.get("name"))  # Output: Alice if item is not present in list it will print none
 # accessing multiple values using value()
 print(info.values())  # Output: dict_values(['Alice', 30, 'New York'])
 # or

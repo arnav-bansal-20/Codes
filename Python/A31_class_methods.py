@@ -1,5 +1,5 @@
 # classs method
-'''class employee:
+class employee:
     company = "Apple"
     def show(self):
         print(f"the name is {self.name} and company is {self.company}")
@@ -12,7 +12,7 @@ e1.name = "arnav"
 e1.show()
 e1.changecompanyname("Tesla")
 e1.show()
-print(employee.company)'''
+print(employee.company)
 
 # class methods as alternative constructors
 '''class employee:

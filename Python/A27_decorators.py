@@ -4,7 +4,8 @@ def greet(fx):
         fx()
         print("thanks")
     return mfx
-# decorator is a function which takes another function as an argument and extends the behaviour of that function without explicitly modifying it.
+# decorator is a function which takes another function as an argument and 
+# extends the behaviour of that function without explicitly modifying it.
 @greet
 def hello():
     print("hello world")

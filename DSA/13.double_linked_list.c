@@ -61,7 +61,7 @@ NODE insertpos(NODE start, int item, int pos)
         cur->next->prev = temp;
     cur->next = temp;
     temp->prev = cur;
-    return start; 
+    return start;
 }
 
 NODE insertafter(NODE start, int key, int item)
@@ -74,7 +74,7 @@ NODE insertafter(NODE start, int key, int item)
         cur = cur->next;
     if (cur == NULL)
     {
-        printf("Key not found\n");\
+        printf("Key not found\n");
         free(temp);
         return start;
     }
@@ -192,7 +192,7 @@ NODE sortList(NODE start)
     NODE cur = start;
     while (cur != NULL)
     {
-        NODE next = cur->next;   // save next
+        NODE next = cur->next; // save next
         cur->next = cur->prev = NULL;
         sorted = orderlist(sorted, cur);
         cur = next;
@@ -202,19 +202,23 @@ NODE sortList(NODE start)
 
 NODE reverse(NODE start)
 {
-    NODE cur = start, temp = NULL;
+    NODE cur = start;
+    NODE temp = NULL;
+
     while (cur != NULL)
     {
-        temp = cur->prev;
-        cur->prev = cur->next;
-        cur->next = temp;
-        cur = cur->prev;
+        temp = cur->next;
+        cur->next = cur->prev;
+        cur->prev = temp;
+
+        cur = temp;
     }
+
     if (temp != NULL)
         start = temp->prev;
+
     return start;
 }
-
 void display(NODE start)
 {
     if (start == NULL)
