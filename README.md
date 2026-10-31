@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Language-Python%203.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Framework-Flask-000000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![Web Dev](https://img.shields.io/badge/Frontend-HTML5%20%7C%20CSS3%20%7C%20JS-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/arnav537/arnav)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/arnav-bansal-20/Codes)
 
 A comprehensive, production-grade repository covering computer science fundamentals, systems programming, object-oriented software engineering, data structures & algorithms (DSA), modern Python scripting, and full-stack web applications.
 
@@ -199,10 +199,11 @@ gcc -Wall -Wextra -std=c11 DSA/18.avl_tree.c -o avl_tree
 ## 👨‍💻 Author & Contributions
 
 **Arnav Bansal**
-- GitHub: [@arnav-bansal-20](https://github.com/arnav-bansal-20) / [@arnav537](https://github.com/arnav537)
+- GitHub: [@arnav-bansal-20](https://github.com/arnav-bansal-20)
 - Contributions, issues, and code reviews are welcome!
 
 ---
 
 ## 📄 License
 This repository is developed for educational, academic, and open-source software engineering reference.
+
