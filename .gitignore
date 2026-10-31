@@ -27,3 +27,6 @@ ENV/
 *.swp
 *.swo
 
+# Standalone Projects
+Web Dev/website/
+

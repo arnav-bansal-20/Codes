@@ -39,8 +39,7 @@ Codes/
 ├── DSA/                # 33 DSA implementations: Trees, lists, heaps, binary search patterns
 ├── Python/             # 47 Python modules & 10 Flask micro-projects
 │   └── flask/          # Modular Flask architecture: APIs, templates, forms, static serving
-├── Web Dev/            # 139 Frontend modules & dynamic Flask website
-│   └── website/        # Multi-page responsive Flask web application
+├── Web Dev/            # 138 Frontend modules: HTML5 semantics, CSS3 layouts, JavaScript DOM
 ├── .gitignore          # Build, OS, and virtualenv exclusions
 └── README.md           # Engineering documentation
 ```
@@ -105,9 +104,11 @@ Comprehensive Python modules from language internals to microservice architectur
   - `flask_apis`: JSON REST endpoints and serialization.
   - `flask_flashing`: Flash message messaging across HTTP redirects.
 
-### 5. Full-Stack Web Development (`Web Dev/`)
-- **Frontend Core (139 files)**: Semantic HTML5 forms, modern CSS3 styling, and JavaScript DOM interaction, event listeners, array manipulation, and dynamic client-side rendering.
-- **Flask Website (`Web Dev/website/`)**: Complete full-stack web application featuring routing (`app.py`), modular Jinja2 templates (`home.html`, `adm.html`, `fac.html`, `infra.html`), and custom stylesheet architecture.
+### 5. Web Development & Client-Side Engineering (`Web Dev/`)
+138 modular laboratory and tutorial programs demonstrating core web technologies and frontend design:
+- **Semantic HTML5**: Forms, semantic layout tags (`<header>`, `<nav>`, `<article>`, `<section>`, `<footer>`), audio/video embedding, tables, lists, and meta configurations.
+- **Modern CSS3 Architecture**: Responsive design principles, CSS grid and flexbox models, box models, selectors, pseudo-classes, transitions, animations, and custom stylesheets.
+- **Vanilla JavaScript & DOM Manipulation**: Interactive event handlers, DOM querying and manipulation, array methods and data pipelines, user prompt inputs, string manipulation, and browser APIs (`navigator`, timers, intervals).
 
 ---
 
@@ -175,13 +176,6 @@ gcc -Wall -Wextra -std=c11 DSA/18.avl_tree.c -o avl_tree
    python3 main.py
    ```
    Access the server at `http://127.0.0.1:5000/`.
-
-4. **Run the Full-Stack Web Application**:
-   ```bash
-   cd "Web Dev/website"
-   pip install -r requirements.txt
-   python3 app.py
-   ```
 
 ---
 
